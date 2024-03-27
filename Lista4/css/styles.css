@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', cursive;
+    text-transform: uppercase;
+    
+}
+
+span {
+    font-style: italic;
+}
+
+/* Style para o header */
+.headerArea {
+    background: black;
+   
+
+}
+
+.headerArea img {
+    float: left;
+    max-height: 139px;
+    margin-right: 5px;
+    padding: 0 5rem 0 5rem;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerArea nav ul {
+    font: normal 500 15px/2px;
+    padding: 1.7rem;
+    color: #141313;
+    list-style-type: none;
+    padding:  3rem;
+}
+
+
+.headerArea nav ul li {
+    display: inline;
+    font: normal 500 15px/2px;
+    text-transform: uppercase;
+    padding: 1.3rem;
+    margin: 5px;
+
+}
+
+.headerArea nav ul .active a {
+    text-decoration: none;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.headerArea nav ul a:hover {
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: rgb(255, 0, 0);
+}
+.banner {
+    background: url(../img/banner.jpg);
+    padding: 5rem; 
+    max-width: 1200px; 
+}
+
+
+
+.banner .search form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.banner .search input[type="text"] {
+    flex: 2; 
+    margin: 10px; 
+    padding: 10px; 
+    border-radius: 25px;
+    font-size: 16px;
+    width: 1000px;
+    box-sizing: border-box;
+
+
+}
+
+.banner .search input[type="text"], .banner .search input[type="submit"] {
+background-color:rgba(115, 81, 194, 0.568);
+}
+
+.banner .search input[type="submit"] {
+    flex: 1; 
+    margin: 10px; 
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    width: 1000px;
+    box-sizing: border-box; 
+}
+
+
+.banner > img {
+    padding: 7rem 0; 
+}
+
+.banner .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; 
+}
+
+.banner > div {
+    display: inline-block; 
+    margin-right: 5px;
+    width: 100%;
+}
+
+.banner h2 {
+    font-size: 3rem;
+    font-style: italic;
+}
+
+.banner p {
+    font-size: 20px;
+    color: #858585;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 50px;
+    background-color: rgb(206, 26, 26);
+}
+
+
+.nav-tabs li {
+    border: 0;
+    height: 44px;
+}
+
+.nav-tabs>li>a {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+}
+
+.nav-tabs>li>a:hover {
+    border: 0;
+    color: rgb(118, 0, 228);
+}
+
+.nav-tabs>li.active>a:hover {
+    color: rgb(118, 0, 228);
+    border: 0;
+}
+
+
+.navArea {
+    bottom: -1px;
+    width: calc(100%);
+    margin-bottom: -1px;
+    font-weight: bold;
+}
+
+.nav-tabs {
+    height: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    background: rgb(153, 2, 2);
+    padding: 2rem;
+    display: block;
+
+}
+
+.container ul li {
+    padding: 1rem;
+    display: inline;
+    background: rgb(129, 1, 1);
+    border-radius: 5px;
+}
+
+#boxFilmes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    align-items: flex-start;
+
+}
+
+#boxFilmes::-webkit-scrollbar {
+    display: none;
+}
+
+.movie {
+    flex: 0 0 auto;
+    height: 100%;
+    width: 300px;
+    background: transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    scroll-snap-align: start;
+    text-transform: uppercase;
+
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+.movie img {
+    width: 20rem;
+}
+
+.movie p {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    padding: 1rem;
+}
+
+.visivel {
+    display: block;
+}
+
+
+.popular>div>div {
+    background: rgba(16, 71, 235, 0.253);
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Roboto', cursive;
+    
+    
+}
+.popular #boxFilmes {
+    padding: 1rem;
+}
+.popular>div {
+    margin: 1rem;
+}
+
+.popular {
+    position: relative;
+    padding: 10px;
+    background-image: url('/img/Design\ sem\ nome.png');
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.btnVisaoGeral {
+    background-color: #8a0000;
+    color: #000000;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    margin: 0 auto; 
+    font-weight: bold;
+}
+
+.btnVisaoGeral:hover {
+    background-color: rgb(118, 0, 228);;
+}
+
+.btnVisaoGeral:focus {
+    outline: none;
+}
+
+
+/* Style para o footer */
+.footerArea {
+    background: black;
+    color: white;
+}
+
+.footerArea div {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerArea div {
+    flex: 1;
+    text-align: center;
+}
+
+.footerArea .social h5 {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.footerArea .social a>i {
+    font-size: 15px;
+    padding: 2rem;
+    color: rgb(54, 53, 53);
+}
+
+.footerArea .social a:hover>i {
+    color: red;
+}
+
+.footerArea .Copyright {
+    padding: 1rem;
+}

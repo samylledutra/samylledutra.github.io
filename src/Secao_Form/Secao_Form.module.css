@@ -1,0 +1,149 @@
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.bg {
+    background-color: rgb(246 189 96 / 28%);
+    padding-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: 700;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.form {
+    background-color: rgb(241 193 114 / 94%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.form > label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 6vh;
+    width: 76vw;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+input[name="mensagem"] {
+    height: 15vh;
+}
+
+input[type="button"] {
+    margin-top: 15px;
+    width: 100%;
+    height: 6vh;
+    color: white;
+    border: 1px solid #230000;
+    background-color: #7E0000;
+}
+
+@media (min-width: 768px){
+    p {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        font-size: 1rem;
+    }
+
+    .form {
+        width: 70%;
+        margin: auto;
+    }
+
+    input {
+        width: 60vw;
+    }
+
+    input[type="button"]{
+        width: 60vw;
+    }
+}
+
+@media (min-width: 1024px){
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.15rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .form {
+        height: 90vh;
+        width: 50vw;
+    }
+
+    .form > label {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 1.6rem;
+    }
+
+    input {
+        height: 6vh;
+        width: 45vw;
+    }
+
+    input[type="button"] {
+        width: 45vw;
+        font-size: 1.2rem;
+    }
+   
+}
+
+@media (min-width: 1280px){
+    p {
+        font-size: 1.15rem;
+    }
+
+.form {
+   width: 40vw;
+}
+input {
+    width: 35vw;
+}
+input[type="button"] {
+    width: 35vw;
+}
+}
+
+@media (min-width: 1420px){
+    .form {
+        width: 50vw;
+        height: 85vh;
+    }
+
+    input {
+        width: 45vw;
+    }
+
+    input[type="button"] {
+        width: 45vw;
+        font-size: 1.3rem;
+    }
+}
